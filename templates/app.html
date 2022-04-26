@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='app.css')}}">
+        <script src="{{ url_for('static', filename='app.js')}}"></script>
+    </head>
+    <body onload="poll()">
+        <h1>Tic Tac Toe</h1>
+        <div class="menu">
+            <span>select Player: </span>
+            <select id="player">
+                <option value="player-x">Player X</option>
+                <option value="player-o">Player O</option>
+            </select>
+            <button onclick="reset()">reset</button>
+        </div>
+        <div id="field">
+            <div class="row">
+                <div id="cell-0" class="cell" onclick="cellClicked()"></div>
+                <div id="cell-1" class="cell" onclick="cellClicked()"></div>
+                <div id="cell-2" class="cell" onclick="cellClicked()"></div>
+            </div>
+            <div class="row">
+                <div id="cell-3" class="cell" onclick="cellClicked()"></div>
+                <div id="cell-4" class="cell" onclick="cellClicked()"></div>
+                <div id="cell-5" class="cell" onclick="cellClicked()"></div>
+            </div>
+            <div class="row">
+                <div id="cell-6" class="cell" onclick="cellClicked()"></div>
+                <div id="cell-7" class="cell" onclick="cellClicked()"></div>
+                <div id="cell-8" class="cell" onclick="cellClicked()"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+h1 {
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.menu, select, button {
+    font-size: 40px;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-left: 100px;
+}
+
+.cell {
+    background-color: lightgrey;
+    height: 200px;
+    width: 200px;
+    border: 3px solid grey;
+    display: inline-block;
+}
+
+.cell.winning {
+    background-color: lightgreen;
+}
+
+.player-x:before {
+    position: absolute;
+    content: "X";
+    color: blue;
+    font-size: 180px;
+    margin-left: 32px;
+}
+
+.player-o:before {
+    position: absolute;
+    content: "O";
+    color: green;
+    font-size: 180px;
+    margin-left: 32px;
+}
