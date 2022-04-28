@@ -23,10 +23,6 @@ button {
     display: inline-block;
 }
 
-.cell.winning {
-    background-color: lightgreen;
-}
-
 .player-x:before {
     position: absolute;
     content: "X";
@@ -38,7 +34,7 @@ button {
 .player-o:before {
     position: absolute;
     content: "O";
-    color: green;
+    color: orange;
     font-size: 180px;
     margin-left: 32px;
 }
