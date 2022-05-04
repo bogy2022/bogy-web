@@ -1,7 +1,7 @@
 function poll() {
     window.fetch("/poll").then(response => response.json()).then(updateBoard);
     
-    setTimeout(1000, poll);
+    setTimeout(poll, 1000);
 }
 
 function cellClicked() {
